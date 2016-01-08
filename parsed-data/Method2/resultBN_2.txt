@@ -1,0 +1,50 @@
+=== Evaluation result ===
+
+Scheme: BayesNet
+Options: -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation: token.testdata
+
+
+Correctly Classified Instances       31142               67.7899 %
+Incorrectly Classified Instances     14797               32.2101 %
+Kappa statistic                          0.6375
+Mean absolute error                      0.0552
+Root mean squared error                  0.1849
+Relative absolute error                 40.8215 %
+Root relative squared error             70.9851 %
+Total Number of Instances            45939     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.704     0.061      0.734     0.704     0.719      0.926    c#
+                 0.651     0.009      0.845     0.651     0.735      0.962    c++
+                 0.687     0.01       0.65      0.687     0.668      0.973    c
+                 0.632     0.012      0.534     0.632     0.579      0.953    css
+                 0.371     0.031      0.166     0.371     0.229      0.847    html
+                 0.565     0.018      0.854     0.565     0.68       0.931    java
+                 0.734     0.034      0.767     0.734     0.75       0.942    javascript
+                 0.849     0.076      0.451     0.849     0.589      0.964    objective-c
+                 0.648     0.033      0.779     0.648     0.707      0.917    php
+                 0.688     0.005      0.587     0.688     0.633      0.963    perl
+                 0.716     0.02       0.74      0.716     0.728      0.96     python
+                 0.655     0.025      0.498     0.655     0.566      0.944    ruby
+                 0.747     0.024      0.615     0.747     0.675      0.955    sql
+Weighted Avg.    0.678     0.034      0.721     0.678     0.687      0.938
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e    f    g    h    i    j    k    l    m   <-- classified as
+ 6225   96   26  114  214  383  339  613  251   25  125  150  279 |    a = c#
+  231 2053  277    5    8   52   21  295   60    8   58   77    9 |    b = c++
+   21   96  862    1    4    9    9  147   19   10   36   33    8 |    c = c
+    9    0    0  613  134    3   83   74   14    1   14   21    4 |    d = css
+   28    1    1   87  274   11  166   53   60    7   18   28    5 |    e = html
+ 1315   76   40   36  169 3998  122  518  230   39  180  258   99 |    f = java
+  169   13    6  208  413   32 4455  292  265   15   66  123   11 |    g = javascript
+   81   37   69    8   20   29   23 2678   75    6   70   47   11 |    h = objective-c
+  216   22   18   48  282  102  481  493 4563   55  129  161  475 |    i = php
+   11    1    4    2    6    2   11   32   19  328   34   19    8 |    j = perl
+   63   22   19   15   52   23   46  314  128   39 2365  143   72 |    k = python
+   45    9    4    8   43   18   45  175   75   22   82 1087   47 |    l = ruby
+   65    3    0    3   36   21    7  256  102    4   21   37 1641 |    m = sql

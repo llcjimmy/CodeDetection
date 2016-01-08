@@ -1,0 +1,12 @@
+position
+color
+page
+container
+important
+font-size
+background
+font-style
+column
+font-face
+margin
+font-weight

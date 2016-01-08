@@ -1,0 +1,22 @@
+=== Evaluation result ===
+
+Correctly Classified Instances       39779               86.5909 %
+Incorrectly Classified Instances      6160               13.4091 %
+Total Number of Instances            45939     
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e    f    g    h    i    j    k    l    m   <-- classified as
+ 8091  120   29   14   25  153  140   15   82    7   22    3  139 |    a = c#
+  224 2581  222    2    3   54   10   10   16    5   16    3    8 |    b = c++
+   58  190  905    1    0   27    6   19   23    7   11    3    5 |    c = c
+   33    4    1  748   24   14  106    4   28    1    4    2    1 |    d = css
+   80    0    0   55  231   34  234    2   74    4   11   10    4 |    e = html
+  576   66   17    8   15 6155   63   17   56   10   30    7   60 |    f = java
+  274   19    6   95   99   62 5199   13  217    5   21   47   11 |    g = javascript
+   75   29   18    3    7   32   20 2911   27    1   15    4   12 |    h = objective-c
+  168   20   11    9   29   57  222    7 6240    7   14   19  242 |    i = php
+   31    5    6    0    3    4    6    1   19  388    7    2    5 |    j = perl
+  107   24   16    4    5   22   24    2   31    7 3019   13   27 |    k = python
+   61    9    4    6    8   16   37    3   42    4   14 1426   30 |    l = ruby
+  124    5    3    2    2   41    4    4   95    3   13   15 1885 |    m = sql

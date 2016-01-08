@@ -1,0 +1,49 @@
+=== Evaluation result ===
+
+Scheme: NaiveBayes
+Relation: token.testdata
+
+
+Correctly Classified Instances       19227               41.8533 %
+Incorrectly Classified Instances     26712               58.1467 %
+Kappa statistic                          0.3565
+Mean absolute error                      0.0904
+Root mean squared error                  0.2809
+Relative absolute error                 66.8598 %
+Root relative squared error            107.8758 %
+Total Number of Instances            45939     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.441     0.073      0.59      0.441     0.505      0.783    c#
+                 0.337     0.007      0.769     0.337     0.469      0.863    c++
+                 0.333     0.011      0.456     0.333     0.385      0.857    c
+                 0.36      0.01       0.432     0.36      0.393      0.88     css
+                 0.073     0.012      0.089     0.073     0.08       0.777    html
+                 0.281     0.017      0.746     0.281     0.408      0.83     java
+                 0.484     0.043      0.63      0.484     0.547      0.824    javascript
+                 0.862     0.304      0.173     0.862     0.288      0.877    objective-c
+                 0.345     0.019      0.765     0.345     0.476      0.808    php
+                 0.516     0.02       0.212     0.516     0.301      0.853    perl
+                 0.425     0.023      0.585     0.425     0.492      0.834    python
+                 0.492     0.076      0.195     0.492     0.279      0.811    ruby
+                 0.409     0.017      0.551     0.409     0.47       0.88     sql
+Weighted Avg.    0.419     0.053      0.594     0.419     0.448      0.826
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e    f    g    h    i    j    k    l    m   <-- classified as
+ 3901   88   50   84   85  369  325 2544  182  146  175  735  156 |    a = c#
+  252 1064  183    9    4   26   33 1201   19   46  129  161   27 |    b = c++
+   23   56  418    5    2   13   16  573    8   22   53   55   11 |    c = c
+    7    3    2  349   39    1  204  257   16    5   18   66    3 |    d = css
+   30    2    0   54   54    6  239  225   41    7   14   66    1 |    e = html
+ 1696   64   59   18   44 1989  206 1939  111  156  209  504   85 |    f = java
+  221   22   26  182  193   43 2935 1394  213   86   91  625   37 |    g = javascript
+   51   32   46    8    8   21   24 2720   27   33   60   95   29 |    h = objective-c
+  262   19   76   56  141   76  523 2289 2434  237  118  529  285 |    i = php
+    9    1    3    6    3    3    7  114   13  246   28   32   12 |    j = perl
+   48   17   36   21   18   75   70 1208   43   95 1402  216   52 |    k = python
+   35    9   10    8    9   17   62  521   23   47   69  816   34 |    l = ruby
+   72    7    7    7    4   27   17  760   53   33   31  279  899 |    m = sql
