@@ -147,7 +147,7 @@ def trainAndTestSVM():
     Y_test = Y[413454:]
     print "train and test splited"
     prob = problem(Y_train, X_train)
-    param = parameter('-s 1')
+    param = parameter('-s 4')
     m = train(prob, param)
 
     print "training over"
@@ -155,7 +155,7 @@ def trainAndTestSVM():
     p_label, p_acc, p_val = predict(Y_test, X_test, m)
 
     print "predicting over"
-    f1 = open('/Users/jimmy/StackOverflow/parsed-data/Method4/PredictedLabel2.txt', 'w')
+    f1 = open('/Users/jimmy/StackOverflow/parsed-data/Method4/PredictedLabel2_new.txt', 'w')
     for element in p_label:
         f1.write(str(element) + "\n")
     f1.close()
